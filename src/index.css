@@ -1,0 +1,120 @@
+:root {
+  /* Cozy Coffee Theme - matching reference image */
+  --coffee-dark-bg: #4A3428;
+  --coffee-brown: #6B4D3C;
+  --coffee-medium: #8B6F56;
+  --coffee-tan: #C9A579;
+  --coffee-cream: #E8D4B8;
+  --coffee-light: #F2E6D8;
+  --accent-peach: #D9A68A;
+  --accent-warm: #C97D60;
+  --text-dark: #2D1F1A;
+  --text-light: #F5EDE3;
+  --border-dark: #3D2820;
+  --shadow-color: rgba(45, 31, 26, 0.3);
+  
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.8;
+  font-weight: 400;
+
+  color: var(--text-light);
+  background: url('/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: url('/cursor-medium.png') 8 8, auto;
+}
+
+a {
+  font-weight: 400;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  display: inline-block;
+  cursor: url('/cursor-medium.png') 8 8, pointer;
+}
+
+a:hover {
+  transform: scale(1.05);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  cursor: url('/cursor-medium.png') 8 8, auto;
+  min-height: 100vh;
+  padding: 20px;
+  background: url('/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 1.6;
+  margin: 0 0 1em 0;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 1.5em 0 0.8em 0;
+}
+
+h3 {
+  font-size: 0.7em;
+  line-height: 1.6;
+  margin: 1em 0 0.5em 0;
+}
+
+p {
+  font-size: 0.6em;
+  line-height: 1.8;
+  margin: 0.8em 0;
+}
+
+button {
+  border-radius: 12px;
+  border: 3px solid var(--border-dark);
+  padding: 12px 24px;
+  font-size: 0.6em;
+  font-weight: 400;
+  font-family: 'Press Start 2P', cursive;
+  background-color: var(--coffee-tan);
+  color: var(--text-dark);
+  cursor: url('/cursor-medium.png') 8 8, pointer;
+  transition: all 0.2s ease;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: brightness(1.1);
+}
+
+button:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px dashed var(--accent-peach);
+  outline-offset: 4px;
+}
